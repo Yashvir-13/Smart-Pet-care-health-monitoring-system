@@ -266,9 +266,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <h3 className="text-lg font-semibold mb-3">Contact Us</h3>
               <address className="text-sm text-gray-300 not-italic">
                 <p>123 Pet Street</p>
-                <p>New York, NY 10001</p>
+                <p>Greater Noida, Uttar Pradesh, India</p>
                 <p className="mt-2">Email: info@pethealth.com</p>
-                <p>Phone: (123) 456-7890</p>
+                <p>Phone: 982180xxxxx</p>
               </address>
             </div>
             <div>

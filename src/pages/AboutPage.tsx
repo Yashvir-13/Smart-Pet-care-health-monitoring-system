@@ -17,7 +17,7 @@ const AboutPage: React.FC = () => {
           <div>
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Story</h2>
             <p className="text-gray-600 mb-4">
-              PetHealth Monitor was founded in 2023 by a team of veterinarians, pet lovers, and technology experts who saw a gap in preventative pet healthcare.
+              PetHealth Monitor was founded in 2025 by a team of pet lovers, and technology experts who saw a gap in preventative pet healthcare.
             </p>
             <p className="text-gray-600 mb-4">
               After one of our founders lost their beloved dog to a condition that could have been detected earlier, we set out to create a comprehensive monitoring system that could help pet owners identify health issues before they become serious.
@@ -98,40 +98,40 @@ const AboutPage: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-xl shadow-md text-center">
             <img 
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" 
-              alt="Dr. James Wilson" 
+              src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fvector-flat-illustration-black-color-suitable-social-media-profiles-icons-screensavers-as-template-avatar-user-profile-person-icon-profile-picturex9_369869465.htm&psig=AOvVaw0QE5bza-12xj9jEgc8bzPp&ust=1745430517563000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMiR7sOZ7IwDFQAAAAAdAAAAABAE&h=200&q=80" 
+              alt="Yashvir Singh" 
               className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
             />
-            <h3 className="text-xl font-semibold">Dr. James Wilson</h3>
-            <p className="text-indigo-600 mb-2">Co-Founder & CEO</p>
+            <h3 className="text-xl font-semibold">Yashvir Singh</h3>
+            <p className="text-indigo-600 mb-2">Co-Founder</p>
             <p className="text-gray-600">
-              Veterinarian with 15+ years of experience and a passion for preventative pet healthcare.
+              Frontend & Backend Developer.
             </p>
           </div>
 
           <div className="bg-white p-6 rounded-xl shadow-md text-center">
             <img 
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" 
-              alt="Dr. Sarah Chen" 
+              src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fvector-flat-illustration-black-color-suitable-social-media-profiles-icons-screensavers-as-template-avatar-user-profile-person-icon-profile-picturex9_369869465.htm&psig=AOvVaw0QE5bza-12xj9jEgc8bzPp&ust=1745430517563000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMiR7sOZ7IwDFQAAAAAdAAAAABAE" 
+              alt="Aditi Yadav" 
               className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
             />
-            <h3 className="text-xl font-semibold">Dr. Sarah Chen</h3>
+            <h3 className="text-xl font-semibold">Aditi Yadav</h3>
             <p className="text-indigo-600 mb-2">Co-Founder & CTO</p>
             <p className="text-gray-600">
-              Biomedical engineer specializing in wearable health monitoring technology.
+              Bs video hi bnai hai.
             </p>
           </div>
 
           <div className="bg-white p-6 rounded-xl shadow-md text-center">
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200&q=80" 
-              alt="Michael Rodriguez" 
+              src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-vector%2Fvector-flat-illustration-black-color-suitable-social-media-profiles-icons-screensavers-as-template-avatar-user-profile-person-icon-profile-picturex9_369869465.htm&psig=AOvVaw0QE5bza-12xj9jEgc8bzPp&ust=1745430517563000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMiR7sOZ7IwDFQAAAAAdAAAAABAE" 
+              alt="Anushka Gupta" 
               className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
             />
-            <h3 className="text-xl font-semibold">Michael Rodriguez</h3>
-            <p className="text-indigo-600 mb-2">Head of Product</p>
+            <h3 className="text-xl font-semibold">Anushka Gupta</h3>
+            <p className="text-indigo-600 mb-2">Co-Founder</p>
             <p className="text-gray-600">
-              Product designer with a background in creating intuitive user experiences for health tech.
+              ppt aur video.
             </p>
           </div>
         </div>
