@@ -79,14 +79,32 @@ const ReportsPage: React.FC = () => {
         <div className="bg-white rounded-xl shadow-md p-6">
           <h2 className="text-2xl font-semibold text-gray-800 mb-6">Weekly Activity Summary</h2>
           <ResponsiveContainer width="100%" height={300}>
-            <BarChart data={weeklyReports} margin={{ top: 10, right: 30, left: 0, bottom: 10 }}>
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="date" tickFormatter={(date) => format(parseISO(date), 'MMM dd')} />
-              <YAxis />
-              <Tooltip />
-              <Bar dataKey="activityScore" fill="#4F46E5" />
-            </BarChart>
-          </ResponsiveContainer>
+  <BarChart data={weeklyReports} margin={{ top: 20, right: 20, left: 0, bottom: 10 }}>
+    <defs>
+      <linearGradient id="barGradient" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stopColor="#6366F1" stopOpacity={0.9} />
+        <stop offset="100%" stopColor="#6366F1" stopOpacity={0.4} />
+      </linearGradient>
+    </defs>
+    <CartesianGrid strokeDasharray="3 3" vertical={false} />
+    <XAxis 
+      dataKey="date" 
+      tickFormatter={(date) => format(parseISO(date), 'MMM dd')} 
+      tick={{ fontSize: 12, fill: '#6B7280' }}
+    />
+    <YAxis tick={{ fontSize: 12, fill: '#6B7280' }} />
+    <Tooltip
+      contentStyle={{ backgroundColor: '#fff', border: '1px solid #E5E7EB', borderRadius: '0.5rem' }}
+      labelFormatter={(date) => format(parseISO(date), 'MMMM dd, yyyy')}
+    />
+    <Bar
+      dataKey="activityScore"
+      fill="url(#barGradient)"
+      radius={[8, 8, 0, 0]}
+      barSize={30}
+    />
+  </BarChart>
+</ResponsiveContainer>
         </div>
       )}
     </div>

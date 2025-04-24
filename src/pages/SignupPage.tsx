@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { UserPlus, Mail, Lock, User } from 'lucide-react';
+import { supabase } from '../context/supabaseClient';
+import type { User as SupabaseUser } from '@supabase/supabase-js';
+
 
 const SignupPage: React.FC = () => {
   const [name, setName] = useState('');
@@ -17,24 +20,26 @@ const SignupPage: React.FC = () => {
     e.preventDefault();
     setError('');
     
-    // Validate passwords match
     if (password !== confirmPassword) {
       setError('Passwords do not match');
       return;
     }
-    
+  
     setIsLoading(true);
-
+  
     try {
       const success = await signup(name, email, password);
       if (success) {
-        navigate('/profile');
-      } else {
-        setError('Failed to create account. Please try again.');
+        // Check if user needs email confirmation
+        const { data: { user } } = await supabase.auth.getUser();
+        if (user?.identities?.length === 0) {
+          navigate('/confirm-email');
+        } else {
+          navigate('/profile');
+        }
       }
-    } catch (err) {
-      setError('An error occurred during signup. Please try again.');
-      console.error(err);
+    } catch (err: any) {
+      setError(err.message || 'An error occurred during signup.');
     } finally {
       setIsLoading(false);
     }

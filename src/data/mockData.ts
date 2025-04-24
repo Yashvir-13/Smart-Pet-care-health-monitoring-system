@@ -259,17 +259,19 @@ export const dietRecommendations: DietRecommendation[] = [
 
 // ------------------ Health Reports ------------------
 export const generateHealthReports = (): HealthReport[] => {
+  const today = new Date();
   const reports: HealthReport[] = [];
+
   for (let i = 0; i < 7; i++) {
-    const date = format(subDays(new Date(), i), 'yyyy-MM-dd');
+    const date = format(subDays(today, i), 'yyyy-MM-dd');
     reports.push({
       date,
-      averageHeartRate: Math.floor(75 + Math.random() * 20),
-      averageTemperature: 38.2 + Math.random() * 0.8,
-      averageSpO2: Math.floor(96 + Math.random() * 4),
-      activityLevel: ['low', 'moderate', 'high'][Math.floor(Math.random() * 3)] as 'low' | 'moderate' | 'high',
-      alerts: Math.floor(Math.random() * 2),
+      averageHeartRate: Math.floor(60 + Math.random() * 40),
+      averageTemperature: parseFloat((37 + Math.random()).toFixed(1)),
+      averageSpO2: Math.floor(95 + Math.random() * 5),
+      activityScore: Math.floor(20 + Math.random() * 80),
     });
   }
+
   return reports;
 };
